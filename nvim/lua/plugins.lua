@@ -17,7 +17,6 @@ packer.init({
 
 local use = packer.use
 packer.reset()
-
 packer.startup(function()
   use {
     'wbthomason/packer.nvim',
@@ -29,6 +28,10 @@ packer.startup(function()
   'nvim-telescope/telescope.nvim', tag = '0.1.0',
   -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
-  } 
+  }
   
+  use {
+      "glepnir/lspsaga.nvim",
+      branch = "main",
+  }
 end)
