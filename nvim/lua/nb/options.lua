@@ -30,15 +30,13 @@ opt.tabstop = 2                             -- insert 2 spaces for a tab
 opt.cursorline = true                       -- highlight the current line
 opt.number = true                           -- set numbered lines
 opt.relativenumber = true                   -- set relative numbered lines
-opt.numberwidth = 4                         -- set number column width to 2 {default 4}
+opt.numberwidth = 2                         -- set number column width to 2 {default 4}
 opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
 opt.wrap = false                            -- display lines as one long line
 opt.scrolloff = 8                           -- is one of my fav
 opt.sidescrolloff = 8
 opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
 opt.ttyfast = true
-cmd "colorscheme darkplus"
-
 
 -- Split screen
 keymap.set("n", "<C-h>", "<C-w>h")
@@ -51,3 +49,4 @@ opt.shortmess:append "c"
 cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
 cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+

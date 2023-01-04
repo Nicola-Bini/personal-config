@@ -27,20 +27,26 @@ packer.startup(function()
   use {'nvim-lua/plenary.nvim'}
   use {'nvim-lua/popup.nvim'}
 
-  use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.0'
-  }
+  -- Fuzzy finder
+  use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
+  use {'nvim-telescope/telescope-media-files.nvim'}
+
+  use ('nvim-treesitter/nvim-treesitter', {un= ':TSUpdate'})
 
   -- Snippet engine (required for cmp)
   use {'L3MON4D3/LuaSnip'}
+  use {'saadparwaiz1/cmp_luasnip'}
 
   -- Cmp plugin (autocompletion)
-  use { 'hrsh7th/nvim-cmp'}
-  use { 'hrsh7th/cmp-buffer'}
-  use { 'hrsh7th/cmp-path'}
-  use { 'hrsh7th/cmp-cmdline'}
+  use {'hrsh7th/nvim-cmp'}
+  use {'hrsh7th/cmp-buffer'}
+  use {'hrsh7th/cmp-path'}
+  use {'hrsh7th/cmp-nvim-lsp'}
+  use {'hrsh7th/cmp-cmdline'}
 
-  use {'lunarvim/darkplus.nvim'}
+  -- colorscheme
+  use {'marko-cerovac/material.nvim'}
+
 end)
 
 

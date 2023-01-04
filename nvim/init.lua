@@ -1,5 +1,10 @@
-require('plugins')
-require('options')
-require('keymaps')
-require('telescope')
-require('cmp')
+require('nb.plugins')
+require('nb.options')
+require('nb.keymaps')
+require('nb.telescope')
+require('nb.treesitter')
+require('nb.nvim-cmp')
+
+-- colorscheme
+require('nb.material')
+--require('nb.cmp')
