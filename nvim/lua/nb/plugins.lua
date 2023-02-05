@@ -33,8 +33,7 @@ packer.init({
 packer.reset()
 packer.startup(function()
   use {
-    'wbthomason/packer.nvim',
-    opt = false
+    'wbthomason/packer.nvim', opt = false
 
   }
   use {'nvim-lua/plenary.nvim'}
@@ -43,14 +42,25 @@ packer.startup(function()
   -- Fuzzy finder
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
   use {'nvim-telescope/telescope-media-files.nvim'}
-
+  
+  -- Lua
+  use {
+    "folke/which-key.nvim",
+    config = function() vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
   -- Snippet engine
   use {'L3MON4D3/LuaSnip'}
   use {'saadparwaiz1/cmp_luasnip'}
 
-  -- autocompletion
-  use {'neovim/nvim-lspconfig'}
+  -- autocompletion use {'neovim/nvim-lspconfig'}
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/cmp-buffer'}
   use {'hrsh7th/cmp-path'}
@@ -60,11 +70,17 @@ packer.startup(function()
   -- Some snippets to test
   use {'rafamadriz/friendly-snippets'}
 
+  -- Treesitter
+  use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
+
   -- colorscheme
   use {'marko-cerovac/material.nvim'}
 
-  -- Configurations for Nvim LSP
-  use {'neovim/nvim-lspconfig'}
+  -- Show class/function hierarchy on top
+use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+}
 
   if packer_bootstrap then
     require('packer').sync()
