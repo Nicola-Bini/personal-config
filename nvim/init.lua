@@ -7,6 +7,12 @@ require('nb.nvim-cmp')
 require('nb.luasnip')
 require('nb.lspconfig')
 
--- colorscheme
-require('nb.material')
 --require('nb.cmp')
+require('nb.null-ls')
+require('nb.prettier')
+
+--require('nb.which-key')
+
+--Choose one of these colorschemes
+--require('nb.material')
+require('nb.rose-pine')

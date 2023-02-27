@@ -60,11 +60,27 @@ packer.startup(function()
   -- Some snippets to test
   use {'rafamadriz/friendly-snippets'}
 
+  -- Prettier
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+  
   -- colorscheme
   use {'marko-cerovac/material.nvim'}
-
-  -- Configurations for Nvim LSP
-  use {'neovim/nvim-lspconfig'}
+  use({'rose-pine/neovim', as = 'rose-pine'})
+  
+  -- Help with key bindings
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  } 
 
   if packer_bootstrap then
     require('packer').sync()
