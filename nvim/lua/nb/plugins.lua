@@ -45,6 +45,13 @@ packer.startup(function()
   use {'nvim-telescope/telescope-media-files.nvim'}
 
 
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
   -- Snippet engine
   use {'L3MON4D3/LuaSnip'}
   use {'saadparwaiz1/cmp_luasnip'}
