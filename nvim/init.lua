@@ -16,3 +16,5 @@ require('nb.prettier')
 --Choose one of these colorschemes
 --require('nb.material')
 require('nb.rose-pine')
+
+require('nb.vgit')
