@@ -32,11 +32,8 @@ packer.init({
 
 packer.reset()
 packer.startup(function()
-  use {
-    'wbthomason/packer.nvim',
-    opt = false
+  use { 'wbthomason/packer.nvim', opt = false }
 
-  }
   use {'nvim-lua/plenary.nvim'}
   use {'nvim-lua/popup.nvim'}
 
@@ -44,6 +41,13 @@ packer.startup(function()
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
   use {'nvim-telescope/telescope-media-files.nvim'}
 
+
+  use { 'nvim-treesitter/nvim-treesitter',
+    run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+        ts_update()
+    end,
+  }
 
   -- Snippet engine
   use {'L3MON4D3/LuaSnip'}
@@ -67,7 +71,10 @@ packer.startup(function()
   -- colorscheme
   use {'marko-cerovac/material.nvim'}
   use({'rose-pine/neovim', as = 'rose-pine'})
-  
+
+  -- Git
+  use { 'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' } } 
+
   -- Help with key bindings
   use {
     "folke/which-key.nvim",
