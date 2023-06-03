@@ -41,7 +41,6 @@ packer.startup(function()
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
   use {'nvim-telescope/telescope-media-files.nvim'}
 
-
   use { 'nvim-treesitter/nvim-treesitter',
     run = function()
         local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
@@ -72,8 +71,16 @@ packer.startup(function()
   use {'marko-cerovac/material.nvim'}
   use({'rose-pine/neovim', as = 'rose-pine'})
 
-  -- Git
-  use { 'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' } } 
+  -- toggleterm
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
+
+  
+  -- tmux
+  use {'alexghergh/nvim-tmux-navigation',
+    disable_when_zoomed = true -- defaults to false
+  }
 
   -- Help with key bindings
   use {
