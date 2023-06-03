@@ -37,6 +37,7 @@ opt.scrolloff = 8                           -- is one of my fav
 opt.sidescrolloff = 8
 opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
 opt.ttyfast = true
+opt.autochdir = true
 
 -- Split screen
 keymap.set("n", "<C-h>", "<C-w>h")
