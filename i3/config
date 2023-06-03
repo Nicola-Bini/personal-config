@@ -199,6 +199,6 @@ mode "$mode_launcher" {
     #bindsym group1+t exec thunderbird
 
     bindsym Escape mode "default"
-
     bindsym Return mode "default"
 }
+exec_always xset r rate 150 175
