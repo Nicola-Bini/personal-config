@@ -202,4 +202,4 @@ mode "$mode_launcher" {
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
-exec_always xset r rate 150 175
+exec_always xset r rate 150 75
