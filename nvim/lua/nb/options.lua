@@ -39,12 +39,6 @@ opt.guifont = "monospace:h17"               -- the font used in graphical neovim
 opt.ttyfast = true
 opt.autochdir = true
 
--- Split screen
-keymap.set("n", "<C-h>", "<C-w>h")
-keymap.set("n", "<C-l>", "<C-W>l")
-keymap.set("n", "<C-k>", "<C-W>k")
-keymap.set("n", "<C-j>", "<C-W>j")
-
 opt.shortmess:append "c"
 
 cmd "set whichwrap+=<,>,[,],h,l"
