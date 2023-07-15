@@ -6,6 +6,7 @@
 #
 # Nico's settings
 exec_always "setxkbmap -layout 'us' -variant 'dvorak'"
+exec_always "xrandr --output DP-1 auto --left-of eDP-1"
 
 # i3 config file (v4)
 #
