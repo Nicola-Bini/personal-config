@@ -67,9 +67,10 @@ packer.startup(function()
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
   
-  -- colorscheme
-  use {'marko-cerovac/material.nvim'}
-  use({'rose-pine/neovim', as = 'rose-pine'})
+  -- colorschemes
+  --use {'marko-cerovac/material.nvim'}:
+  --use {'rose-pine/neovim', as = 'rose-pine'}
+  use { "catppuccin/nvim", as = "catppuccin"}
 
   -- toggleterm
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()

@@ -18,8 +18,9 @@ require('nb.prettier')
 ----------------------------
 -- Choose one colorscheme --
 ----------------------------
-require('nb.material')
-require('nb.rose-pine')
+--require('nb.material')
+--require('nb.rose-pine')
+require('nb.catppuccin')
 
 -- tmux
 require('nb.tmux-nav')
