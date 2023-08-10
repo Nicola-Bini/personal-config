@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
+-- I don't think I am currently using this
 local opts = {
   root = vim.fn.stdpath("data") .. "/lazy", -- directory where plugins will be installed
   defaults = {
