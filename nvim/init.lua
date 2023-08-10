@@ -20,6 +20,7 @@ require('nb.lsp')
 -- ----------------------------
 -- -- Choose one colorscheme --
 -- ----------------------------
+vim.cmd('colorscheme tokyonight-storm')
 -- --require('nb.material')
 -- --require('nb.rose-pine')
 -- Require('nb.catppuccin')
