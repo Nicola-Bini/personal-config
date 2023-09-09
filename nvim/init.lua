@@ -1,8 +1,6 @@
-
 require('nb.options')
 require('nb.keymaps')
 require('nb.plugins')
-require('nb.lsp')
 
 ---------------------------
 -- Plugin configurations --
