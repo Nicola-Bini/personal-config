@@ -12,3 +12,11 @@ nmcli - scan
 
 nmcli - connect
 ```nmcli device wifi connect SSID password password```
+
+
+# TODO:
+
+- Add aliases for git and lazygit
+e.g. ``` git add => g a ```
+e.g. ``` lazygit => lg or g lz```
+e.g. ``` git log <properties> => g l ```

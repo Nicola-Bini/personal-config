@@ -1,9 +1,8 @@
+-- noremap is for remapping without recursion
+-- silent is for not printing the command
 local opts = { noremap = true, silent = true} 
 
-local term_opts = { silent = true}
-
 local keymap = vim.api.nvim_set_keymap
-
 
 -- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
@@ -28,7 +27,6 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
