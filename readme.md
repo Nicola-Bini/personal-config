@@ -14,9 +14,13 @@ nmcli - connect
 ```nmcli device wifi connect SSID password password```
 
 
-# TODO:
-
+## TODO:
 - Add aliases for git and lazygit
 e.g. ``` git add => g a ```
 e.g. ``` lazygit => lg or g lz```
 e.g. ``` git log <properties> => g l ```
+
+# Neovim 
+
+## TODO:
+- Add autocomplete (I think is cmp)
