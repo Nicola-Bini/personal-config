@@ -1,4 +1,3 @@
-
 return {
 
   -- file explorer
@@ -6,28 +5,26 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     cmd = "Neotree",
-    dependencies = { 
-     "nvim-lua/plenary.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
     },
     keys = {
       {
-        "<leader>fe",
+        "<leader>e",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = require("nb.nb-utils").get_root() })
         end,
         desc = "Explorer NeoTree (root dir)",
       },
       {
-        "<leader>fE",
+        "<leader>E",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
         end,
         desc = "Explorer NeoTree (cwd)",
-      },
-      { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
-      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+      }
     },
     deactivate = function()
       vim.cmd([[Neotree close]])
@@ -62,26 +59,26 @@ return {
         },
       },
     },
-  config = function ()
+    config = function()
       -- If you want icons for diagnostic errors, you'll need to define them somewhere:
       vim.fn.sign_define("DiagnosticSignError",
-        {text = " ", texthl = "DiagnosticSignError"})
+        { text = " ", texthl = "DiagnosticSignError" })
       vim.fn.sign_define("DiagnosticSignWarn",
-        {text = " ", texthl = "DiagnosticSignWarn"})
+        { text = " ", texthl = "DiagnosticSignWarn" })
       vim.fn.sign_define("DiagnosticSignInfo",
-        {text = " ", texthl = "DiagnosticSignInfo"})
+        { text = " ", texthl = "DiagnosticSignInfo" })
       vim.fn.sign_define("DiagnosticSignHint",
-        {text = "󰌵", texthl = "DiagnosticSignHint"})
+        { text = "󰌵", texthl = "DiagnosticSignHint" })
 
       require("neo-tree").setup({
         close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
         popup_border_style = "rounded",
         enable_git_status = true,
         enable_diagnostics = true,
-        enable_normal_mode_for_inputs = false, -- Enable normal mode for input dialogs.
+        enable_normal_mode_for_inputs = false,                             -- Enable normal mode for input dialogs.
         open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
-        sort_case_insensitive = false, -- used when sorting files and directories in the tree
-        sort_function = nil , -- use a custom function for sorting files and directories in the tree 
+        sort_case_insensitive = false,                                     -- used when sorting files and directories in the tree
+        sort_function = nil,                                               -- use a custom function for sorting files and directories in the tree
         -- sort_function = function (a,b)
         --       if a.type == b.type then
         --           return a.path > b.path
@@ -130,8 +127,8 @@ return {
               -- Change type
               added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
               modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
-              deleted   = "✖",-- this can only be used in the git_status source
-              renamed   = "󰁕",-- this can only be used in the git_status source
+              deleted   = "✖", -- this can only be used in the git_status source
+              renamed   = "󰁕", -- this can only be used in the git_status source
               -- Status type
               untracked = "",
               ignored   = "",
@@ -153,9 +150,9 @@ return {
             nowait = true,
           },
           mappings = {
-            ["<space>"] = { 
-                "toggle_node", 
-                nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use 
+            ["<space>"] = {
+              "toggle_node",
+              nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
             },
             ["<2-LeftMouse>"] = "open",
             ["<cr>"] = "open",
@@ -175,7 +172,7 @@ return {
             -- ['C'] = 'close_all_subnodes',
             ["z"] = "close_all_nodes",
             --["Z"] = "expand_all_nodes",
-            ["a"] = { 
+            ["a"] = {
               "add",
               -- this command supports BASH style brace expansion ("x{a,b,c}" -> xa,xb,xc). see `:h neo-tree-file-actions` for details
               -- some commands may take optional config options, see `:h neo-tree-mappings` for details
@@ -230,18 +227,18 @@ return {
             },
           },
           follow_current_file = {
-            enabled = false, -- This will find and focus the file in the active buffer every time
+            enabled = false,                      -- This will find and focus the file in the active buffer every time
             --               -- the current file is changed while the tree is open.
-            leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+            leave_dirs_open = false,              -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
           },
-          group_empty_dirs = false, -- when true, empty folders will be grouped together
+          group_empty_dirs = false,               -- when true, empty folders will be grouped together
           hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
-                                                  -- in whatever position is specified in window.position
-                                -- "open_current",  -- netrw disabled, opening a directory opens within the
-                                                  -- window like netrw would, regardless of window.position
-                                -- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
+          -- in whatever position is specified in window.position
+          -- "open_current",  -- netrw disabled, opening a directory opens within the
+          -- window like netrw would, regardless of window.position
+          -- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
           use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
-                                          -- instead of relying on nvim autocmd events.
+          -- instead of relying on nvim autocmd events.
           window = {
             mappings = {
               ["<bs>"] = "navigate_up",
@@ -268,11 +265,11 @@ return {
         },
         buffers = {
           follow_current_file = {
-            enabled = true, -- This will find and focus the file in the active buffer every time
+            enabled = true,          -- This will find and focus the file in the active buffer every time
             --              -- the current file is changed while the tree is open.
             leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
           },
-          group_empty_dirs = true, -- when true, empty folders will be grouped together
+          group_empty_dirs = true,   -- when true, empty folders will be grouped together
           show_unloaded = true,
           window = {
             mappings = {
@@ -301,14 +298,14 @@ return {
       vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
     end
   }
- -- -- search/replace in multiple files
- -- {
- --   "nvim-pack/nvim-spectre",
- --   cmd = "Spectre",
- --   opts = { open_cmd = "noswapfile vnew" },
- --   -- stylua: ignore
- --   keys = {
- --     { "<leader>sr", function() require("spectre").open() end, desc = "Replace in files (Spectre)" },
- --   },
- -- },
+  -- -- search/replace in multiple files
+  -- {
+  --   "nvim-pack/nvim-spectre",
+  --   cmd = "Spectre",
+  --   opts = { open_cmd = "noswapfile vnew" },
+  --   -- stylua: ignore
+  --   keys = {
+  --     { "<leader>sr", function() require("spectre").open() end, desc = "Replace in files (Spectre)" },
+  --   },
+  -- },
 }
