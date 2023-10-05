@@ -12,6 +12,7 @@ return {
     },
     keys = {
       {
+        --TODO: this is not working
         "<leader>e",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = require("nb.nb-utils").get_root() })
@@ -19,7 +20,7 @@ return {
         desc = "Explorer NeoTree (root dir)",
       },
       {
-        "<leader>E",
+        "<leader>E1",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
         end,
