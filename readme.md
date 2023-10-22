@@ -13,6 +13,13 @@ nmcli - scan
 nmcli - connect
 ```nmcli device wifi connect SSID password password```
 
+## keyrepeat speed
+```xset r rate 150 50```
+
+## File explorer
+```Thunar```
+I should probably add an i3 shortcut for this.
+
 ## Screen
 xrandr - scan
 ```xrandr```
