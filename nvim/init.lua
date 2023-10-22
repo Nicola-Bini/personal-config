@@ -18,7 +18,7 @@ require('nb.plugins')
 -- ----------------------------
 -- -- Choose one colorscheme --
 -- ----------------------------
-vim.cmd('colorscheme tokyonight-storm')
+vim.cmd('colorscheme tokyonight')
 -- --require('nb.material')
 -- --require('nb.rose-pine')
 -- Require('nb.catppuccin')
