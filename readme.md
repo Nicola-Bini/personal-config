@@ -2,6 +2,15 @@
 
 ```ln -s /home/*username*/documents/repos/i3 /home/*username*/.config/i3 ```
 
+```ln -s ~/assets/repos/dotfiles/alacritty/ ~/.config/alacritty```
+
+```ln -s ~/assets/repos/dotfiles/alacritty ~/.config/alacritty```
+
+```ln -s ~/assets/repos/dotfiles/.Xresources ~/.Xresources```
+
+```ln -s ~/assets/repos/dotfiles/.gitconfig ~/.gitconfig```
+
+ 
 # Arch
 ## Wifi
 NetworkManager GUI
