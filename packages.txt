@@ -1,0 +1,26 @@
+# Arch
+base linux linux-firmware
+
+# UI 
+xorg-server xorg-apps xorg-xinit
+i3-gaps i3blocks i3lock numlockx i3status
+lightdm lightdm-gtk-greeter
+picom
+
+# Basic utils
+openssh sudo git neovim networkmanager
+unzip
+
+# Apps
+firefox htop alacritty lazygit
+
+# Audio
+pulseaudio pulseaudio-alsa
+man-db
+
+# drivers
+intel-ucode vulkan-intel
+
+# Fonts
+ttf-fira-code noto-fonts-emoji # not user if emoji is being used
+ttf-firacode-nerd
