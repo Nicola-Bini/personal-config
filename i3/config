@@ -204,8 +204,8 @@ bindsym group1+$mod+e mode "$mode_launcher"
 
 mode "$mode_launcher" {
     bindsym group1+f exec firefox ; mode "default"
-    bindsym group1+n exec "sudo systemctl restart NetworkManager"; mode "default"
-    #bindsym group1+t exec thunderbird
+    # bindsym group1+n exec "sudo systemctl restart NetworkManager"; mode "default"
+    # bindsym group1+t exec thunderbird
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
@@ -352,12 +352,12 @@ mode "$mode_gaps_left" {
         bindsym Escape mode "default"
 }
 # Color shemes for windows 
-set $bgcolor    #523d64
-set $in-bgcolor #363636
-set $text       #ffffff
-set $u-bgcolor  #ff0000
-set $indicator  #a8a3c1
-set $in-text    #969696
+set $bgcolor    #0A60FF 
+set $in-bgcolor #003576
+set $text       #DCDCDD
+set $u-bgcolor  #A44A3F
+set $indicator  #C64191
+set $in-text    #DCDCDD
 
 #                       border          background      text            indicator (a line which shows where the next window will be placed)     
 client.focused          $bgcolor        $bgcolor        $text           $indicator
