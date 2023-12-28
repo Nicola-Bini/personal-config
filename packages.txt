@@ -6,10 +6,12 @@ xorg-server xorg-apps xorg-xinit
 i3-gaps i3blocks i3lock numlockx i3status
 lightdm lightdm-gtk-greeter
 picom
+polybar
 
 # Basic utils
 openssh sudo git neovim networkmanager
-unzip
+unzip gcc
+
 
 # Apps
 firefox htop alacritty lazygit

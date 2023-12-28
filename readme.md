@@ -10,7 +10,10 @@
 
 ```ln -s ~/assets/repos/dotfiles/.gitconfig ~/.gitconfig```
 
- 
+```ln -s ~/assets/repos/dotfiles/packages.txt ~/.config/packages.txt```
+
+```ln -s ~/assets/repos/dotfiles/polybar ~/.config/polybar```
+
 # Arch
 ## Wifi
 NetworkManager GUI
