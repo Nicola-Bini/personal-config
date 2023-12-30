@@ -10,7 +10,7 @@ polybar
 
 # Basic utils
 openssh sudo git neovim networkmanager
-unzip gcc
+unzip gcc tmux
 
 
 # Apps
