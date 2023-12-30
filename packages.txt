@@ -26,3 +26,10 @@ intel-ucode vulkan-intel
 # Fonts
 ttf-fira-code noto-fonts-emoji # not user if emoji is being used
 ttf-firacode-nerd
+
+### Coding ###
+# Web Dev
+npm
+nodejs-lts-iron # Check if there is a version, this is 20.X LTS
+
+
