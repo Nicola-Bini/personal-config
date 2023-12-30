@@ -49,6 +49,9 @@ e.g. ``` git log <properties> => g l ```
 
 # Neovim 
 
+# Tmux
+git clone https://github.com/tmux-plugins/tpm ~/.config/.tmux/plugins/tpm
+
 ## TODO:
 - Add autocomplete (I think is cmp)
 
