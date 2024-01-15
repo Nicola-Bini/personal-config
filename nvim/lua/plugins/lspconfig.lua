@@ -1,4 +1,65 @@
 return {
+
+
+  {
+    "williamboman/mason.nvim",
+
+    config = function()
+      require("mason").setup({
+        lspconfig = true,
+        lspconfig_opts = {
+          cssls = {
+            cmd = { "vscode-css-language-server", "--stdio" },
+            filetypes = { "css", "scss", "less" },
+            root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
+            settings = {
+              css = {
+                validate = true,
+              },
+              less = {
+                validate = true,
+              },
+              scss = {
+                validate = true,
+              },
+            },
+          },
+        },
+      })
+    end
+  },
+
+
+  {
+
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason").setup({
+        lspconfig = true,
+        lspconfig_opts = {
+          cssls = {
+            cmd = { "vscode-css-language-server", "--stdio" },
+            filetypes = { "css", "scss", "less" },
+            root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
+            settings = {
+              css = {
+                validate = true,
+              },
+              less = {
+                validate = true,
+              },
+              scss = {
+                validate = true,
+              },
+            },
+          },
+        },
+      })
+    end
+  },
+
+
+  {
   'neovim/nvim-lspconfig',
 
   -- Autostart lua_ls server
@@ -65,4 +126,5 @@ return {
     })
 
   end -- config
+  }
 }
