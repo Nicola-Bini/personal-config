@@ -369,3 +369,10 @@ client.focused          $bgcolor        $bgcolor        $text           $indicat
 client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
+
+
+# change the shortcut above to use shift+alt+$ instead
+bindsym Mod1+Shift+4 exec "flameshot gui"
+
+
+

@@ -11,13 +11,13 @@ polybar
 # Basic utils
 openssh sudo git neovim networkmanager
 unzip gcc tmux
-
+flameshot # screenshot
 
 # Apps
 firefox htop alacritty lazygit
 
 # Audio
-pulseaudio pulseaudio-alsa
+pulseaudio pulseaudio-alsa kmix
 man-db
 
 # drivers
