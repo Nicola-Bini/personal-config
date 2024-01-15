@@ -48,9 +48,15 @@ e.g. ``` git log <properties> => g l ```
 - Set up UI to launch applications
 
 # Neovim 
+Activate copilot
+```Copilot auth ```
 
 # Tmux
 git clone https://github.com/tmux-plugins/tpm ~/.config/.tmux/plugins/tpm
+
+Resurrect
+- `prefix + Ctrl-s` - save
+- `prefix + Ctrl-r` - restore
 
 ## TODO:
 - Add autocomplete (I think is cmp)
