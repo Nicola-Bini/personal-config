@@ -5,7 +5,8 @@
 # this file and re-run i3-config-wizard(1).
 #
 # Nico's settings
-exec_always "setxkbmap -layout 'us' -variant 'dvorak'"
+exec_always "setxkbmap -layout 'us'
+# -variant 'dvorak'"
 #exec_always feh --bg-fill ~/.config/i3/wallpapers/wolf.png
 #exec_always xrandr --output eDP-3 --mode 2560x1440 --rate 144 --primary --output 
 #exec_always xrandr --output DP-3 --mode 2560x1440 --primary --output eDP-1 --off
