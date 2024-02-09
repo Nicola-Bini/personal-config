@@ -12,13 +12,17 @@ polybar
 openssh sudo git neovim networkmanager
 unzip gcc tmux
 flameshot # screenshot
+gimp
 
 # Apps
 firefox htop alacritty lazygit
 
+### System ###
 # Audio
 pulseaudio pulseaudio-alsa kmix
 man-db
+# Clock
+ntp
 
 # drivers
 intel-ucode vulkan-intel
