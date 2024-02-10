@@ -13,6 +13,7 @@ openssh sudo git neovim networkmanager
 unzip gcc tmux
 flameshot # screenshot
 gimp
+ripgrep # useful for searching files in a directory, used in nvim's telescope 
 
 # Apps
 firefox htop alacritty lazygit
@@ -21,6 +22,7 @@ firefox htop alacritty lazygit
 # Audio
 pulseaudio pulseaudio-alsa kmix
 man-db
+os-prober
 # Clock
 ntp
 
