@@ -1,18 +1,18 @@
-```ln -s /home/*username*/documents/repos/nvim /home/*username*/.config/nvim ```
+```ln -s $HOME/assets/repos/dotfiles/nvim $HOME/.config/nvim ```
 
-```ln -s /home/*username*/documents/repos/i3 /home/*username*/.config/i3 ```
+```ln -s $HOME/assets/repos/dotfiles/i3 $HOME/.config/i3 ```
 
-```ln -s ~/assets/repos/dotfiles/alacritty/ ~/.config/alacritty```
+```ln -s $HOME/assets/repos/dotfiles/alacritty/ $HOME/.config/alacritty```
 
-```ln -s ~/assets/repos/dotfiles/alacritty ~/.config/alacritty```
+```ln -s $HOME/assets/repos/dotfiles/alacritty $HOME/.config/alacritty```
 
-```ln -s ~/assets/repos/dotfiles/.Xresources ~/.Xresources```
+```ln -s $HOME/assets/repos/dotfiles/.Xresources $HOME/.Xresources```
 
-```ln -s ~/assets/repos/dotfiles/.gitconfig ~/.gitconfig```
+```ln -s $HOME/assets/repos/dotfiles/.gitconfig $HOME/.gitconfig```
 
-```ln -s ~/assets/repos/dotfiles/packages.txt ~/.config/packages.txt```
+```ln -s $HOME/assets/repos/dotfiles/packages.txt $HOME/.config/packages.txt```
 
-```ln -s ~/assets/repos/dotfiles/polybar ~/.config/polybar```
+```ln -s $HOME/assets/repos/dotfiles/polybar $HOME/.config/polybar```
 
 # Arch
 ## Wifi
