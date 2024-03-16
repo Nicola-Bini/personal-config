@@ -4,7 +4,10 @@
 - lazygit
 - tmux
 - neovim
-- 
+- python
+- node
+- npm
+- cargo-c
 
 # non-brew
 - brave
@@ -12,6 +15,7 @@
 - google drive
 - apple reminders
 - oh-my-zsh
+- lunarvim
 
 
 # file system settings
@@ -20,4 +24,4 @@
 
 # already installed
 - git
-- 
+- make
