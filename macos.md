@@ -16,6 +16,7 @@
 - apple reminders
 - oh-my-zsh
 - lunarvim
+- FiraCode font
 
 
 # file system settings
