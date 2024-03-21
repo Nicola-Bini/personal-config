@@ -8,6 +8,7 @@
 - node
 - npm
 - cargo-c
+- pyvenv
 
 # non-brew
 - brave
