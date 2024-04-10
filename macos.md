@@ -20,6 +20,7 @@
 - FiraCode font
 - poetry ([install command](https://python-poetry.org/docs/#installing-with-the-official-installer))
 - Docker (https://docs.docker.com/desktop/install/mac-install/)
+- Ollama for openDevin ([curl -fsSL https://ollama.com/install.sh | sh](https://github.com/OpenDevin/OpenDevin/blob/main/docs/documentation/LOCAL_LLM_GUIDE.md))
 
 
 # file system settings
