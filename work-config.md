@@ -15,4 +15,4 @@ azure core tools (useful to run your azure function locally) https://github.com/
 
 # Terminal commands
 ## Disable accented letters on keyhold
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+While choosing keyboard type, choose US keyboard (not international, not "ISO", but "US", "ANSI", if I remember right) 
