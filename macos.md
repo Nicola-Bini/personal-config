@@ -31,3 +31,8 @@
 # already installed
 - git
 - make
+
+# Git aliases
+This command works with other aliases as well e.g. "git lg --all"
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
