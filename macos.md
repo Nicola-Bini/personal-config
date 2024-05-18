@@ -22,6 +22,7 @@
 - Docker (https://docs.docker.com/desktop/install/mac-install/)
 - Ollama for openDevin ([curl -fsSL https://ollama.com/install.sh | sh](https://github.com/OpenDevin/OpenDevin/blob/main/docs/documentation/LOCAL_LLM_GUIDE.md))
 - Conda
+- Gimp https://www.gimp.org/downloads/
 
 
 # file system settings
