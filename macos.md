@@ -9,6 +9,10 @@
 - npm
 - cargo-c
 - pyenv
+- pipx (https://pipx.pypa.io/stable/) (used to install posting, POSTMAN alternative)
+
+# pipx
+- posting https://github.com/darrenburns/posting?tab=readme-ov-file
 
 # non-brew
 - brave
