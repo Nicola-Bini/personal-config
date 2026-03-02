@@ -1,13 +1,29 @@
+# --- Workspaces Configuration ---
+# See: https://nikitabobko.io/AeroSpace/guide#workspaces
+[workspaces]
+"1" = {}
+"2" = {}
+"3" = {}
+"4" = {}
+"5" = {}
+"6" = {}
+"7" = {}
+"8" = {}
+"9" = {}
+"0" = {}
+"desktop" = {} # Dedicated workspace for a "show desktop" effect
+
+# --- Core AeroSpace Configuration ---
 after-startup-command = []
 # Notify Sketchybar about workspace change
 exec-on-workspace-change = []
 # Start AeroSpace at login
 start-at-login = true
-# Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
+# Normalizations. See: https://nikitabobko.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-# See: https://nikitabobko.github.io/AeroSpace/guide#layouts
+# See: https://nikitabobko.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
 accordion-padding = 30
@@ -148,6 +164,9 @@ alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-0 = 'workspace 0'
+# Shortcut to quickly show the desktop by switching to a dedicated "desktop" workspace
+alt-d = 'workspace desktop'
+
 
 # See: https://nikitabobko.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
