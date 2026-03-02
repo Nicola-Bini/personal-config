@@ -65,7 +65,7 @@ run = ['move-node-to-workspace 5']
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.io/AeroSpace/guide#key-mapping
 [key-mapping]
-preset = 'qwerty'
+preset = 'dvorak'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
